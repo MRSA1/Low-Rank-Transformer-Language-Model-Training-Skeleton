@@ -96,11 +96,11 @@ Welcome TO contributions! Areas of interest:
 📜 Citation
 If you use this code in your research, please cite:
 
-@software{LowRankLLMTrainer2024,
+@software{LowRankLLMTrainer2025,
   title = {Low-Rank Transformer Language Model Trainer},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/your-username/LowRank-LLM-Trainer}
+  author = {MD. RAD SARAR ANANDO},
+  year = {2025},
+  url = {https://github.com/MRSA1/LowRank-LLM-Trainer}
 }
 
 📄 License
@@ -112,21 +112,6 @@ Built with ❤️ for the open-source AI community
 Making large language model training accessible to everyone
 
 </div> ```
-
-⚙️ Advanced Configuration:
-Custom Model Architecture-
-configs/custom.yaml
-d: 1024           # hidden dimension
-layers: 20        # transformer blocks  
-heads: 32         # attention heads
-rank: 128         # low-rank projection
-
-Progressive Training Plan-
-Start small, grow intelligently
---block 256 \
---auto_grow \
---grow_plan "256,512,768,1024,1536,2048" \
---grow_every_steps 25000
 
 
 🏗️ Model Architecture
