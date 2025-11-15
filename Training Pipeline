@@ -1,0 +1,25 @@
+Phase 1: Pretraining
+
+# Efficient pretraining on educational data
+python train.py train \
+  --preset base17 \
+  --source "HuggingFaceFW/fineweb-edu,togethercomputer/RedPajama-Data-1T" \
+  --block 576 \
+  --auto_grow \
+  --grow_plan "576,768,1024,1536" \
+  --amp \
+  --save_every_sec 3600
+
+
+Phase 2: Instruction Tuning
+
+# Specialize for chat/completion
+python train.py train \
+  --preset base17 \
+  --warmstart_from ./pretrained/model.pt \
+  --after_sft_steps 10000 \
+  --after_sft_source "HuggingFaceH4/ultrachat_200k" \
+  --after_sft_chat \
+  --after_sft_block 1120 \
+  --after_sft_lr_core 1e-5 \
+  --after_sft_lr_head 2e-5
