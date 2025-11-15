@@ -1,0 +1,4 @@
+git clone https://https://github.com/MRSA1/Low-Rank-Transformer-Language-Model-Training-Skeleton
+cd LowRank-LLM-Trainer
+
+pip install -r requirements.txt
