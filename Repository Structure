@@ -1,0 +1,13 @@
+LowRank-LLM-Trainer/
+├── README.md
+├── requirements.txt
+├── train.py
+├── inference.py
+├── configs/
+│   ├── base17.yaml
+│   └── small.yaml
+├── scripts/
+│   ├── train_pretrain.sh
+│   └── train_sft.sh
+└── examples/
+    └── custom_dataset.md
