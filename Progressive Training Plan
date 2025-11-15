@@ -1,0 +1,5 @@
+# Start small, grow intelligently
+--block 256 \
+--auto_grow \
+--grow_plan "256,512,768,1024,1536,2048" \
+--grow_every_steps 25000
