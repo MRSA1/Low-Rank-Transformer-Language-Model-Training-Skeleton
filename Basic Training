@@ -1,0 +1,7 @@
+# Pretrain a base17 model
+python train.py train \
+  --preset base17 \
+  --source "HuggingFaceFW/fineweb-edu" \
+  --steps 10000 \
+  --save_dir ./models/base17-pretrain \
+  --amp
