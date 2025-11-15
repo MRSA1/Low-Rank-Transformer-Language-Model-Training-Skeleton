@@ -100,8 +100,8 @@ If you use this code in your research, please cite:
   title = {Low-Rank Transformer Language Model Trainer},
   author = {MD. RAD SARAR ANANDO},
   year = {2025},
-  url = {https://github.com/MRSA1/LowRank-LLM-Trainer}
-}
+  url = {https://github.com/MRSA1/Low-Rank-Transformer-Language-Model-Training-Skeleton}
+
 
 📄 License
 MIT License - see LICENSE file for details.
@@ -111,7 +111,7 @@ Built with ❤️ for the open-source AI community
 
 Making large language model training accessible to everyone
 
-</div> ```
+</div> 
 
 
 🏗️ Model Architecture
