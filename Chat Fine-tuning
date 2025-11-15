@@ -1,0 +1,8 @@
+# Automatic SFT after pretraining
+python train.py train \
+  --preset base17 \
+  --warmstart_from ./models/base17-pretrain/final.pt \
+  --after_sft_steps 5000 \
+  --after_sft_source "mlabonne/opc-sft-stage2-chat" \
+  --after_sft_chat \
+  --save_dir ./models/base17-chat
